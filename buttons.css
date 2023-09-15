@@ -1,0 +1,182 @@
+button {
+  background-color: beige;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 10px 20px;
+  align-items:normal;
+
+}
+
+/* Add hover effect */
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add a pulsating animation to the "One" button */
+.One {
+  background-color: red;
+  animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add a spin animation to the "Two" button */
+.Two {
+  background-color: blue;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add a bounce animation to the "Three" button */
+.Three {
+  background-color: blueviolet;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Add a color-changing animation to the "Four" button */
+.Four {
+
+  animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+/* Add a shake animation to the "Five" button */
+.Five {
+  background-color: darkorchid;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  overflow: hidden;
+  &:hover {
+    background-color: #555;
+    transform: scale(1.20);
+  }
+  &:active {
+    background-color: #28a586;
+    transform: scale(0.80);
+    animation: shake 0.80s ease-in-out;
+  }
+}
+
+/* Add a heartbeat animation to the "Six" button */
+.Six {
+  background-color: gold;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Add a flip animation to the "Seven" button */
+.Seven {
+  background-color: aqua;
+  animation: flip 1s infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* Add a bounce animation to the "Eight" button */
+.Eight {
+  background-color: deeppink  ;
+  animation: bounceUpDown 1s infinite;
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shake {
+  0% {transform: translateX(0);}
+  5% {transform: translateY(0);}
+  10% {transform: translateX(-5px);}
+  15% {transform: translateY(-5px);}
+  20% {transform: translateX(5px);}
+  25% {trasnform: translateY(5px);}
+  30% {transform: translateX(-5px);}
+  35% {transform: translateY(-5px);}
+  40% {transform: translateX(5px);}
+  45% {transform: translateY(5px);}
+  50% {transform: translateX(-5px);}
+  55% {transform: translateY(-5px);}
+  60% {transform: translateX(5px);}
+  65% {transform: translateY(5px);}
+  70% {transform: translateX(-5px);}
+  75% {transform: translateY(-5px);}
+  80% {transform: translateX(5px);}
+  85% {transform: translateY(5px);}
+  90% {transform: translateX(-5px);}
+  95% {transform: translateY(-5px);}
+  99% {transform: translateY(0);}
+  100% {transform: translateX(0);}
+}
